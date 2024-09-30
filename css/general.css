@@ -1,0 +1,36 @@
+body {
+	background-color:#D8DBE2;
+	font-family: Libre Baskerville;
+	margin: 0px;
+}
+header {
+	margin: 0px;
+    color: #373F51;
+	display: inline-block;
+	display: flex;
+ 	align-items: center;
+	height: 100px;
+	justify-content: space-evenly;
+	border-style: solid;
+	background-color: #A9BCD0;
+	display: flex;
+	justify-content: space-between;
+}
+a {
+	text-decoration: none;
+}
+header input{
+    flex-grow: 4;
+}
+header img {
+    height: 100px;
+}
+header a{
+	color: green;
+}
+header a:hover {
+	color: red;
+}
+h1 {
+    color: blue;
+}
