@@ -3,34 +3,57 @@ body {
 	font-family: Libre Baskerville;
 	margin: 0px;
 }
-header {
-	margin: 0px;
-    color: #373F51;
-	display: inline-block;
-	display: flex;
- 	align-items: center;
-	height: 100px;
-	justify-content: space-evenly;
-	border-style: solid;
-	background-color: #A9BCD0;
-	display: flex;
-	justify-content: space-between;
-}
 a {
 	text-decoration: none;
 }
-header input{
+header div{
+	height: 100px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-evenly;
+	border-style: solid;
+	margin: 10px;
+
+
+}
+header div input{
     flex-grow: 4;
 }
-header img {
+header div img {
     height: 100px;
 }
-header a{
+header div a{
 	color: green;
 }
-header a:hover {
+header div a:hover {
 	color: red;
 }
 h1 {
     color: blue;
+}
+footer{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	background-color: aqua;
+}
+
+footer #terms{
+	width: 90%;
+	margin: 50px;
+	border-color: black;
+	border-style: solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+footer #logos{
+	width: 90%;
+	margin: 50px;
+	border-color: black;
+	border-style: solid;
+	display: flex;
+	flex-direction: row;
 }
