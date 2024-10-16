@@ -1,0 +1,39 @@
+
+img{
+    margin: 0px;
+}
+h1{
+    width: fit-content;
+    text-align: center;
+}
+#products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 10px;
+    align-items: center;
+}
+.products h2{
+    height: 50px;
+    width: 250px;
+}
+.products img {
+    height: 200px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1015px) {
+    #products {
+	    grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #products {
+        grid-template-columns: 1fr;
+    }
+}

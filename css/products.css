@@ -1,0 +1,9 @@
+#main_body{
+    padding: 10px;
+    background-color: rgb(212, 239, 254);
+    display: flex;
+    flex-direction: column;
+}
+img{
+    height: 200px;
+}

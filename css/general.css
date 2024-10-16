@@ -1,5 +1,5 @@
 body {
-	background-color:#D8DBE2;
+	background-color:hsl(222, 15%, 87%);
 	font-family: Libre Baskerville;
 	margin: 0px;
 }
@@ -18,13 +18,24 @@ header div{
 
 }
 header div input{
+	min-width: 5px;
     flex-grow: 4;
 }
 header div img {
-    height: 100px;
+	height: 100px;
+#home{
+	margin: 0%;
+}
+
 }
 header div a{
 	color: green;
+	width: fit-content;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+ {
+
 }
 header div a:hover {
 	color: red;
@@ -39,7 +50,7 @@ footer{
 	background-color: aqua;
 }
 
-footer #terms{
+footer #terms, #logos{
 	width: 90%;
 	margin: 50px;
 	border-color: black;
@@ -49,11 +60,13 @@ footer #terms{
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
-footer #logos{
-	width: 90%;
-	margin: 50px;
-	border-color: black;
-	border-style: solid;
-	display: flex;
-	flex-direction: row;
+footer p{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+@media screen {
+	header{
+
+	}
 }
