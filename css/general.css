@@ -3,9 +3,7 @@ body {
 	font-family: Libre Baskerville;
 	margin: 0px;
 }
-a {
-	text-decoration: none;
-}
+
 header{
 	background-color: #2B7A78;
 	height: 100px;
@@ -92,10 +90,4 @@ footer p{
 	margin-left: 5px;
 	color: #DEF2F1;
 
-}
-
-@media screen {
-	header{
-
-	}
 }

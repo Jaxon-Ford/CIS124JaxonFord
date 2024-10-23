@@ -20,12 +20,8 @@ input{
 }
 #comment input{
     height: 100px
-    resize: none;
 }
 textarea{
     width: 80%;
     background-color: #DEF2F1;
-}
-#email, #comment, #f-name, #l-name{
-
 }
