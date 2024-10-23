@@ -9,27 +9,35 @@
 </head>
 <body>
     <header>   
-        <div>
+        <div id="logo">
+            <a href="../index.html">
             <img src="../images/my_logo.png" alt="Logo">
-            <input type="text" placeholder="Search..">
-            <a href="contact.html">Contact Us!</a>
+            </a>
         </div>
+        <input type="text" placeholder="Search..">
+        <a id="contact" href="contact.html">Contact Us!</a>
     </header>
-    <div id="main_body">
-        <a href="../index.html">Home</a>
-        <div>
+    <form id="main_body" action="/action_page.php">
+        <div id="f-name">
             <h1>First Name</h1>
             <input type="text" placeholder="First Name...">
-            <h1>Last Name</h1>
+        </div>
+        <div id="l-name">
+            <h1><label for="l-name">Last Name</label></h1>
             <input type="text" placeholder="Last Name...">
         </div>
-            <h1>Email</h1>
+        <div id="email">
+            <h1><label for="email">Email</label></h1>
             <input type="text" placeholder="Email...">
-            <h1>Message</h1>
-            <input type="text" placeholder="Message...">
-            <input type="submit" value="Submit">
         </div>
+        <div id="comment">
+            <h1><label for="comment">Comment</label></h1>
+            <textarea name="Comment" rows="4" cols="50" placeholder="Message..."></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
     <footer>
+        <h3>Information</h3>
         <div id="terms">
             <p>Terms and Conditions</p>
             <p>Privacy Policy</p>
@@ -39,9 +47,9 @@
         </div>
         <h3>Follow us</h3>
         <div id="logos">
-            <h4>Facebook</h4>
-            <h4>Instagram</h4>
-            <h4>X</h4>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>X</p>
         </div>
     </footer>
 </body>

@@ -1,12 +1,13 @@
 body {
-	background-color:hsl(222, 15%, 87%);
+	background-color:#3AAFA9;
 	font-family: Libre Baskerville;
 	margin: 0px;
 }
 a {
 	text-decoration: none;
 }
-header div{
+header{
+	background-color: #2B7A78;
 	height: 100px;
 	display: flex;
 	align-items: center;
@@ -17,42 +18,68 @@ header div{
 
 
 }
-header div input{
+header input{
 	min-width: 5px;
     flex-grow: 4;
 }
-header div img {
+#logo{
 	height: 100px;
-#home{
 	margin: 0%;
+	margin-right: 10px;
+}
+header img{
+	height: 100px;
+}
+header a{
+	height: 0%;
 }
 
-}
-header div a{
-	color: green;
+#contact{
+	color: #DEF2F1;
+	background-color: #17252A;
 	width: fit-content;
 	margin-right: 10px;
 	margin-left: 10px;
+	height: auto;
+	padding: 5px;
+	border-width: 5px;
 }
- {
+input {
+	background-color: #DEF2F1;
+	height: 40px;
+}
 
-}
-header div a:hover {
+
+#contact:hover {
 	color: red;
 }
-h1 {
-    color: blue;
+#title {
+	width: 100%;
+	color: #FEFFFF;
+	text-align: center;
+}
+h2 {
+    color: #17252A;
+}
+h3 {
+	color: #FEFFFF;
 }
 footer{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	background-color: aqua;
+	background-color: #17252A;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	margin-top: 200px;
+
 }
 
 footer #terms, #logos{
 	width: 90%;
 	margin: 50px;
+	margin-top: 10px;
 	border-color: black;
 	border-style: solid;
 	display: flex;
@@ -63,6 +90,8 @@ footer #terms, #logos{
 footer p{
 	margin-right: 5px;
 	margin-left: 5px;
+	color: #DEF2F1;
+
 }
 
 @media screen {
