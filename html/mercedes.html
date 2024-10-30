@@ -17,6 +17,12 @@
         <input type="text" placeholder="Search..">
         <a id="contact" href="contact.html">Contact Us!</a>
     </header>
+    <div class="navbar" id="navbar">
+        <a href="../index.html">Home</a>
+        <a href="Mustang.html" >Most Popular</a>
+        <a href="contact.html"  >Contact</a>
+        <i class="menu-icon" onclick="toggleNavbar()">☰</i>
+    </div>
     <div id="main_body">
         <div id="car">
             <h1>Mercedes-Benz CLE 300</h1>
@@ -49,4 +55,14 @@
     </footer>
 
 </body>
+<script>
+    function toggleNavbar() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.classList.contains("vertical")) {
+            navbar.classList.remove("vertical");
+        } else {
+            navbar.classList.add("vertical");
+        }
+    }
+</script>
 </html>

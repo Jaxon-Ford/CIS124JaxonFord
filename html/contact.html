@@ -17,22 +17,28 @@
         <input type="text" placeholder="Search..">
         <a id="contact" href="contact.html">Contact Us!</a>
     </header>
+    <div class="navbar" id="navbar">
+        <a href="../index.html">Home</a>
+        <a href="Mustang.html" >Most Popular</a>
+        <a href="contact.html"  >Contact</a>
+        <i class="menu-icon" onclick="toggleNavbar()">☰</i>
+    </div>
     <form id="main_body" action="/action_page.php">
-        <div id="f-name">
+        <div class="form" id="f-name">
             <h1>First Name</h1>
             <input type="text" placeholder="First Name...">
         </div>
-        <div id="l-name">
+        <div class="form" id="l-name">
             <h1><label for="l-name">Last Name</label></h1>
             <input type="text" placeholder="Last Name...">
         </div>
-        <div id="email">
+        <div class="form" id="email">
             <h1><label for="email">Email</label></h1>
             <input type="text" placeholder="Email...">
         </div>
-        <div id="comment">
+        <div class="form" id="comment">
             <h1><label for="comment">Comment</label></h1>
-            <textarea name="Comment" rows="4" cols="50" placeholder="Message..."></textarea>
+            <textarea name="Comment" rows="4" placeholder="Message..."></textarea>
         </div>
         <input type="submit" value="Submit">
     </form>
@@ -53,4 +59,14 @@
         </div>
     </footer>
 </body>
+<script>
+    function toggleNavbar() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.classList.contains("vertical")) {
+            navbar.classList.remove("vertical");
+        } else {
+            navbar.classList.add("vertical");
+        }
+    }
+</script>
 </html>

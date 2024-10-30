@@ -13,8 +13,6 @@ header{
 	justify-content: space-evenly;
 	border-style: solid;
 	margin: 10px;
-
-
 }
 header input{
 	min-width: 5px;
@@ -51,10 +49,48 @@ input {
 #contact:hover {
 	color: red;
 }
-#title {
-	width: 100%;
-	color: #FEFFFF;
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #2B7A78;
+	padding: 10px;
+	transition: all 0.3s ease;
+}
+.navbar a {
+	color: #DEF2F1;
+	padding: 14px 20px;
+	text-decoration: none;
 	text-align: center;
+}
+.navbar a:hover {
+	background-color: #3AAFA9;
+	color: black;
+}
+.navbar .menu-icon {
+	display: none;
+	color: white;
+	cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+	.navbar .menu-icon {
+		display: block;
+	}
+	.navbar.vertical {
+		flex-direction: column;
+		align-items: center;
+	}
+	.navbar.vertical a {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.navbar a {
+		display: none;
+	}
+	.navbar.vertical .menu-icon {
+		align-self: flex-end;
+	}
 }
 h2 {
     color: #17252A;
