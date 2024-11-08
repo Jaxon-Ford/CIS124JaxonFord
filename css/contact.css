@@ -1,4 +1,4 @@
-#main_body{
+#main_form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -37,8 +37,32 @@ input[type="submit"]{
 textarea{
     background-color: #DEF2F1;
 }
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+h2{
+    text-align: center;
+}
+table{
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DEF2F1;
+}
+th, td{
+    width: 100px;
+    height: 40px;
+}
+.title{
+    width: 150px;
+}
+.discription{
+    width: 250px;
+}
 @media screen and (max-width: 600px) {
-    #main_body {
+    #main_form {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         justify-items: center;
@@ -61,5 +85,8 @@ textarea{
     input[type="submit"]{
         grid-column: auto;
         grid-row: auto;
+    }
+    .title, .discription{
+        width: 100px;
     }
 }
